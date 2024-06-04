@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.header {
+    height: 70px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.header .logo {
+    font-size: 24px;
+    color: rgb(149, 10, 149);
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.header .menu-item {
+    display: flex;
+    list-style: none;
+}
+
+.header .menu-item li {
+    margin-left: 30px;
+}
+
+.header .menu-item a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    transition: all 0.3s ease-out;
+}
+
+.header .menu-item a:focus {
+    outline: 2px solid orange;
+}
+
+.header .menu-item .home {
+    border-bottom: 2px solid purple;
+}
+
+.header .menu-item a:hover {
+    color: orange;
+    transform: translateY(-5px);
+}
+
+.bg-sec {
+    background-image: url('https://images.pexels.com/photos/939729/pexels-photo-939729.jpeg?auto=compress&cs=tinysrgb&w=600');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 560px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+.bg-sec .txt {
+    margin-bottom: 20px;
+}
+
+.bg-sec .txt .first-txt {
+    font-size: 36px;
+}
+
+.bg-sec .srch {
+    display: flex;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.bg-sec .srch input {
+    width: 300px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+}
+
+.bg-sec .srch input:focus {
+    outline: 2px solid orange;
+}
+
+.bg-sec .srch button {
+    padding: 10px 20px;
+    border: none;
+    background-color: orange;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.bg-sec .srch button:hover {
+    background-color: darkorange;
+}
+
+.bg-sec .srch button:focus {
+    outline: 2px solid darkorange;
+}
+
+.subscription-message {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.offer, .dest, .contact {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.offer .main-con, .dest .main-con, .contact .main-con {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.offer .box, .dest .box, .contact .box, .contact .box4 {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.offer .box img, .dest .box img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.offer .box:hover, .dest .box:hover, .contact .box:hover, .contact .box4:hover {
+    transform: translateY(-10px);
+}
+
+footer.copy {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .header .menu-item {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header .menu-item li {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .bg-sec .srch {
+        flex-direction: column;
+    }
+
+    .bg-sec .srch input, .bg-sec .srch button {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .offer .main-con, .dest .main-con, .contact .main-con {
+        flex-direction: column;
+        align-items: center;
+    }
+}

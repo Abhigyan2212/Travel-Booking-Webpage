@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Code Stream</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+  <nav class="header" id="header">
+    <div class="logo">
+      <h1>Journey Junction</h1>
+    </div>
+    <ul class="menu-item">
+      <li><a class="home" href="#home">Home</a></li>
+      <li><a href="#booking">Booking</a></li>
+      <li><a href="#best-place">Best Place</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <section class="bg-sec" id="home">
+    <div class="txt">
+      <p class="first-txt">Welcome to <span>Journey Junction</span> UP to 30% OFF</p>
+      <h2>Join Over 30,000 Members.</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste eos consectetur provident?</p>
+    </div>
+    <div class="srch">
+      <input type="email" name="email" placeholder="Enter Your Email" id="emailInput">
+      <button onclick="subscribe()">Subscribe</button>
+    </div>
+    <p class="subscription-message" id="subscriptionMessage"></p>
+  </section>
+
+  <section class="offer" id="booking">
+    <div class="txt">
+      <h1 class="offer-text">Recent Place Offer</h1>
+    </div>
+    <div class="main-con">
+      <div class="box">
+        <img src="https://images.unsplash.com/photo-1525625293386-3f8f99389edd?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8c2luZ2Fwb3JlfGVufDB8fDB8fHww"
+          alt="Place 1">
+        <div class="txt">
+          <p>The Best Place Singapore Check Details</p>
+          <p>10 Days From <span>50,000</span></p>
+        </div>
+        <div class="btn">
+          <button>Book Now</button>
+        </div>
+      </div>
+      <!-- Repeat the above box for other offers -->
+    </div>
+  </section>
+
+  <section class="dest" id="best-place">
+    <div class="txt">
+      <h1>Popular Destinations</h1>
+    </div>
+    <div class="main-con">
+      <div class="box">
+        <img src="https://images.unsplash.com/photo-1555217851-6141535bd771?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8c2luZ2Fwb3JlfGVufDB8fDB8fHww"
+          alt="Destination 1">
+        <div class="name">
+          <p>Best Place Singapore</p>
+        </div>
+      </div>
+      <!-- Repeat the above box for other destinations -->
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="txt">
+      <h1>Contact Me</h1>
+    </div>
+    <div class="main-con">
+      <div class="box">
+        <i class="fa-solid fa-location-dot"></i>
+        <p>City Centre Gwalior (M.P)</p>
+      </div>
+      <div class="box">
+        <i class="fa-solid fa-phone-volume"></i>
+        <p>+91 7440624092</p>
+      </div>
+      <div class="box">
+        <i class="fa-solid fa-envelope-open-text"></i>
+        <p>abhigyan2212@gmail.com</p>
+      </div>
+      <div class="box4">
+        <p class="follow">Follow Me</p>
+        <div class="social">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-square-instagram"></i>
+          <i class="fa-brands fa-square-youtube"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="copy">
+    <p>&copy; 2024 Design By Code Stream.</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"
+    integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ=="
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
